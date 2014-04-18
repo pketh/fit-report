@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fit Report</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<!-- typekit -->
+	<script src="//use.typekit.net/zjr3gzu.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+	<script src="libs/jquery-2.1.0.min.js"></script>
+	<script src="libs/mustache.min.js"></script>
+	<script src="libs/moment.min.js"></script>
+
+	<script src="parser.js"></script>
+</head>
+
+<body>
+
+<!-- Header -->
+
+	<header role="banner">
+		<section class="header">
+			<a href="http://www.pketh.org">
+				<div class="logo">
+				</div>
+			</a>
+			<span class="title">
+				Fit Report
+			</span>
+		</section>
+
+		<nav role="navigation">
+			<a href="about.html">
+				what's this?
+			</a>
+		</nav>
+
+		<section class="intro">
+			<div class="col1">
+				<div class="infobox streak">
+
+					<script id="streak" type="text/template">
+						<span class="streak-number">
+							{{streak}}
+						</span>
+						day streak
+					</script>
+
+				</div>
+			</div>
+
+			<div class="col3 top-line">
+				<div class="infobox ate-well">
+					ate well?
+				</div>
+			</div>
+
+			<div class="col2 top-line">
+				<div class="infobox worked-out">
+					worked out?
+				</div>
+			</div>
+		</section>
+	</header>
+
+<!-- Reports Section -->
+	<section class="reports" role="main">
+
+		<!-- report template -->
+		<script id="report" type="text/template">
+			<article class="report">
+				<div class="col1">
+					<div class="report-date">
+						{{reportDate}}
+					</div>
+					<div class="report-good-mood {{goodMood}}">
+					</div>
+					<div class="report-note">
+						{{note}}
+					</div>
+				</div>
+
+				<div class="col3">
+					<div class="col3-report-ate-well {{ateWell}}">
+					</div>
+				</div>
+
+				<div class="col2">
+					<div class="col2-report-worked-out {{workedOut}}">
+					</div>
+				</div>
+			</article>
+		</script>
+
+	</section>
+
+	<footer>
+		<script id="goodbye" type="text/template">
+			<p>Enjoy the rest of your {{day}}.</p>
+		</script>
+	</footer>
+</body>
+</html>

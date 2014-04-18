@@ -1,0 +1,278 @@
+
+
+html {
+		background-color: #FD5C47;
+}
+
+@media (max-width: 400px) {
+	html {
+		font-size: 90%;
+	}
+}
+
+body {
+	color: white;
+	font-family: 'proxima-nova', 'Lucida Grande', Helvetica, sans-serif;
+	font-weight: 300;
+	max-width: 700px;
+	padding-left: 15px;
+	padding-right: 15px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+@media (max-width: 700px) {
+	body {
+		margin-top: 12%;
+	}
+}
+
+/*
+* ---------------------------------------------------
+*
+* Layout
+*
+* ---------------------------------------------------
+*/
+
+.col1, .col2, .col3 {
+	display: inline-block;
+}
+
+.col1 {
+	margin-bottom: 21px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 50%; /*max 65*/
+	min-width: 104px;
+}
+
+@media (max-width: 600px) {
+	.col1 {
+		width: 35%;
+	}
+}
+
+.col2, .col3 {
+	float: right;
+	text-align: right;
+	background-repeat: no-repeat;
+	margin-left: 15px;
+}
+
+@media (max-width: 330px) {
+	.col2, .col3 {
+		margin-left: 10px;
+	}
+}
+
+.col2 {
+	width: 92px;
+}
+
+.col3 {
+	width: 70px;
+}
+
+/*
+* ---------------------------------------------------
+*
+* Header
+*
+* ---------------------------------------------------
+*/
+
+header {
+	margin-bottom: -2px;
+}
+
+.logo {
+	background-image: url(images/pketh.svg);
+	display: inline-block;
+	width: 84px;
+	height: 22px;
+	background-repeat: no-repeat;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+}
+
+.logo:hover {
+	opacity: 0.6;
+}
+
+header a, nav a:hover {
+	text-decoration: none;
+}
+
+.header {
+	display: inline-block;
+	margin-bottom: 46px;
+}
+
+.title {
+	font-size: 1.25rem; /*20px*/
+	vertical-align: 18%;
+}
+
+nav {
+	float: right;
+	margin-top: 3px
+}
+
+nav a {
+	text-decoration: underline;
+}
+
+nav a, .report-note {
+	color: black;
+	opacity: .5;
+	font-size: 0.875rem; /*14px*/
+}
+
+/*
+* ---------------------------------------------------
+*
+* Intro Section
+*
+* ---------------------------------------------------
+*/
+
+.intro {
+	height: 42px;
+	clear: both;
+}
+
+.infobox {
+	display: inline-block;
+	color: #FD5C47;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 3px;
+	font-size: 0.875rem; /*14px*/
+	padding: 2px 8px;
+}
+
+.streak {
+	background-image: url(images/happy.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-position: 7px 3px;
+	padding-left: 28px;
+	overflow: hidden;
+}
+
+.top-line {
+	background-image: url(images/top-line.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-bottom: 20px;
+}
+
+.col2.top-line {
+	background-position: 47px 21px;
+}
+
+.col3.top-line {
+	background-position: 37px 21px;
+}
+
+/*
+* ---------------------------------------------------
+*
+* Reports Section
+*
+* ---------------------------------------------------
+*/
+
+.report {
+	height: 88px;
+	clear: both;
+}
+
+.report-date {
+	font-size: 1.25rem; /*20px*/
+	display: inline-block;
+	margin-bottom: 2px;
+	margin-top: 33px;
+	margin-right: 3px;
+}
+
+@media (max-width: 400px) {
+	.report-day {
+		font-size: 1.1rem;
+	}
+}
+
+.report-good-mood {
+	background-color: #C939A7;
+	font-size: 0.875rem; /*14px*/
+	border-radius: 3px;
+	padding: 2px 8px;
+	display: inline-block;
+	vertical-align: 16%;
+	background-image: none;
+}
+
+.report-good-mood.yes {
+	display: none;
+	background-image: none;
+	background-color: #23C0C1
+}
+
+.report-good-mood.no {
+	background-image: none;
+}
+
+.report-note {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.col2-report-worked-out {
+	height: 88px;
+	background-repeat: no-repeat;
+	background-position: 39px;
+}
+
+.col3-report-ate-well {
+	height: 88px;
+	background-repeat: no-repeat;
+	background-position: 29px;
+}
+
+.yes {
+	background-image: url(images/yes-line.svg);
+}
+
+.no {
+	background-image: url(images/no-line.svg);
+}
+
+
+/*
+* ---------------------------------------------------
+*
+* Footer
+*
+* ---------------------------------------------------
+*/
+
+footer {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+footer p {
+	margin-top: 0;
+	margin-bottom: .4em;
+	font-size: 0.875rem; /*14px*/
+	text-align: right;
+	margin-right: 2px
+}

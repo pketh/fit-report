@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>NetworkState</key>
+		<false/>
+	</dict>
+	<key>Label</key>
+	<string>com.pketh.fit-report-helper</string>
+	<key>Program</key>
+	<string>/Users/pirijan/Dropbox/projects/fit-report/report.sh</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Day</key>
+		<integer>7</integer>
+		<key>Hour</key>
+		<integer>13</integer>
+		<key>Minute</key>
+		<integer>45</integer>
+	</dict>
+	<key>WatchPaths</key>
+	<array>
+		<string>/Users/pirijan/Dropbox/App/Reporter-app</string>
+	</array>
+</dict>
+</plist>
