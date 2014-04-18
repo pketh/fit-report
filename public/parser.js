@@ -62,9 +62,9 @@ $.getJSON('fit-report.json', function(json) {
 		// good mood?
 		goodMood = json[i].responses[2].answeredOptions;
 		if (goodMood == 'Yes') {
-			moodEmote = ':)'
+			moodEmote = '( ﾟ▽ﾟ)/'
 		} else {
-			moodEmote = ':('
+			moodEmote = '(╯︵╰,)'
 		}
 
 		// note string

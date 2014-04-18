@@ -48,7 +48,7 @@ body {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	width: 50%; /*max 65*/
+	width: 65%;
 	min-width: 104px;
 }
 
@@ -210,23 +210,21 @@ nav a, .report-note {
 }
 
 .report-good-mood {
-	background-color: #C939A7;
-	font-size: 0.875rem; /*14px*/
-	border-radius: 3px;
-	padding: 2px 8px;
+	border-radius: 30px;
 	display: inline-block;
-	vertical-align: 16%;
-	background-image: none;
+	vertical-align: 0%;
+	width: 15px;
+	height: 15px
 }
 
 .report-good-mood.yes {
-	display: none;
 	background-image: none;
 	background-color: #23C0C1
 }
 
 .report-good-mood.no {
 	background-image: none;
+	background-color: #C939A7;
 }
 
 .report-note {
