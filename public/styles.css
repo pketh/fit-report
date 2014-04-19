@@ -206,7 +206,7 @@ nav a, .report-note {
 	font-size: 1.25rem; /*20px*/
 	display: inline-block;
 	margin-bottom: 2px;
-	margin-top: 33px;
+	margin-top: 34px;
 	margin-right: 3px;
 }
 
@@ -219,7 +219,7 @@ nav a, .report-note {
 .report-good-mood {
 	border-radius: 30px;
 	display: inline-block;
-	vertical-align: 0%;
+	vertical-align: -7%;
 	width: 15px;
 	height: 15px
 }
