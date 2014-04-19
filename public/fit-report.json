@@ -77,12 +77,12 @@
     },
     {
       "answeredOptions": [
-        "Yes"
+        "No"
       ],
       "questionPrompt": "Good mood?"
     },
     {
-      "textResponse": "",
+      "textResponse": "In a bad mood today",
       "questionPrompt": "Anything happen today?"
     }
   ],
@@ -110,7 +110,7 @@
       "questionPrompt": "Good mood?"
     },
     {
-      "textResponse": "",
+      "textResponse": "Trying something new today",
       "questionPrompt": "Anything happen today?"
     }
   ],
@@ -138,7 +138,7 @@
       "questionPrompt": "Good mood?"
     },
     {
-      "textResponse": "",
+      "textResponse": "Sunny day cardio",
       "questionPrompt": "Anything happen today?"
     }
   ],
