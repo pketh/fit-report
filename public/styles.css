@@ -15,14 +15,21 @@ body {
 	font-family: 'proxima-nova', 'Lucida Grande', Helvetica, sans-serif;
 	font-weight: 300;
 	max-width: 700px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
+}
+
+@media (max-width: 400px) {
+	body {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 @media (max-width: 700px) {
