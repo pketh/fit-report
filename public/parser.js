@@ -6,6 +6,8 @@ $.getJSON('fit-report.json', function(json) {
 	var responses,
 		workoutStreak = 0,
 		ateWellStreak = 0,
+		workoutStreakInitial, //
+		ateWellStreakInitial, //
 		streak,
 		date,
 		day,
@@ -47,6 +49,10 @@ $.getJSON('fit-report.json', function(json) {
 		workedOut = json[i].responses[0].answeredOptions;
 		if (workedOut == 'Yes') {
 			workoutStreak++;
+		} else if (workedOut == 'No' && typeof workoutStreakInitial === 'undefined') {
+			console.log('&& hello')
+			workoutStreakInitial = workoutStreak;
+			workoutStreak = 0;
 		} else {
 			workoutStreak = 0;
 		}
@@ -55,6 +61,9 @@ $.getJSON('fit-report.json', function(json) {
 		ateWell = json[i].responses[1].answeredOptions;
 		if (ateWell == 'Yes') {
 			ateWellStreak++;
+		} else if (ateWell == 'No' && typeof ateWellStreakInitial === 'undefined') {
+			ateWellStreakInitial = ateWellStreak;
+			ateWellStreak = 0;
 		} else {
 			ateWellStreak = 0;
 		}
@@ -88,10 +97,10 @@ $.getJSON('fit-report.json', function(json) {
 
 	}
 
-	if (workoutStreak < ateWellStreak) {
-		streak = workoutStreak;
+	if (workoutStreakInitial < ateWellStreakInitial) {
+		streak = workoutStreakInitial;
 	} else {
-		streak = ateWellStreak;
+		streak = ateWellStreakInitial;
 	}
 	console.log('total streak is ' + streak + ' days');
 	streakObj = {
