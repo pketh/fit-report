@@ -27,7 +27,7 @@ On my mac, I have `report.sh` set to run as a [launch daemon][apple-launchd] whe
 
 When run, `report.sh` combines the reporter JSON files into a single file and uploads it to an ftp server (configured in `credentials.sh`).
 
-On the remote static server, `parser.js` then parses the processed Reporter JSON and renders the fitness visualization.
+On the remote static server, `parser.js` then parses the processed Reporter JSON and renders the fitness visualization using Mustache.
 
 :fireworks:
 
