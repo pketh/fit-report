@@ -1,5 +1,7 @@
 # Fit Report
 
+<img src="https://dl.dropboxusercontent.com/u/366007/fit%20report/Icon-120%402x.png" width="120">
+
 Fit Report is a personal fitness visualization that uses the output from [Reporter for iPhone][reporter-app] to map your workout and nutrition activity to how you feel.
 
 <img src="https://dl.dropboxusercontent.com/u/366007/fit%20report/screenshot.png" alt="fit-report" width="873">
