@@ -1,10 +1,12 @@
 # Fit Report
 
+<img src="https://dl.dropboxusercontent.com/u/366007/fit%20report/Icon-120%402x.png" width="120">
+
 Fit Report is a personal fitness visualization that uses the output from [Reporter for iPhone][reporter-app] to map your workout and nutrition activity to how you feel.
 
 <img src="https://dl.dropboxusercontent.com/u/366007/fit%20report/screenshot.png" alt="fit-report" width="873">
 
-`worked out`, `ate well` and `mood` are fluid personal metrics meant to encourage the pursuit of lifelong fitness. A 3k run might be the workout of a lifetime for one person and a warm up for another. Over time, as you get fitter you'll naturally intensify your workouts and improve your nutritional standards.
+`worked out`, `ate well` and `mood` are qualitative metrics which you should redefine as you improve. A 5k run might be the workout of a lifetime for one person and a warm up for someone more experienced. Over time, as you get fitter you'll naturally intensify your workouts and improve your nutritional standards.
 
 ## Why
 
@@ -21,13 +23,13 @@ The data for the fit-report comes from [Reporter][reporter-app] for iPhone. I ch
 
 <img src="https://dl.dropboxusercontent.com/u/366007/fit%20report/reporter-questions.png" alt="reporter app" width="320">
 
-On my mac, I have `report.sh` set to run as a [launch daemon][apple-launchd] whenever a new report gets added ([launchd guide][guide]).
+On my mac, I have `report.sh` set to run as a [launch daemon][apple-launchd] every night ([launchd guide][guide]).
 
 > `report.sh` requires [jq][jq]. Run `$ brew install jq`
 
 When run, `report.sh` combines the reporter JSON files into a single file and uploads it to an ftp server (configured in `credentials.sh`).
 
-On the remote static server, `parser.js` then parses the processed Reporter JSON and renders the fitness visualization using Mustache.
+On the remote static server, `parser.js` then parses the processed Reporter JSON and uses Mustache js to render the fitness visualization.
 
 :fireworks:
 
