@@ -23,7 +23,7 @@ The data for the fit-report comes from [Reporter][reporter-app] for iPhone. I ch
 
 <img src="https://dl.dropboxusercontent.com/u/366007/fit%20report/reporter-questions.png" alt="reporter app" width="320">
 
-On my mac, I have `report.sh` set to run as a [launch daemon][apple-launchd] whenever a new report gets added ([launchd guide][guide]).
+On my mac, I have `report.sh` set to run as a [launch daemon][apple-launchd] every night ([launchd guide][guide]).
 
 > `report.sh` requires [jq][jq]. Run `$ brew install jq`
 
