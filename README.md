@@ -6,7 +6,7 @@ Fit Report is a personal fitness visualization that uses the output from [Report
 
 <img src="https://dl.dropboxusercontent.com/u/366007/fit%20report/screenshot.png" alt="fit-report" width="873">
 
-`worked out`, `ate well` and `mood` are fluid personal metrics meant to encourage the pursuit of lifelong fitness. A 3k run might be the workout of a lifetime for one person and a warm up for another. Over time, as you get fitter you'll naturally intensify your workouts and improve your nutritional standards.
+`worked out`, `ate well` and `mood` are qualitative metrics which you should redefine as you improve. A 5k run might be the workout of a lifetime for one person and a warm up for someone more experienced. Over time, as you get fitter you'll naturally intensify your workouts and improve your nutritional standards.
 
 ## Why
 
