@@ -4,7 +4,7 @@
 
 Fit Report is a personal fitness visualization that uses the output from [Reporter for iPhone][reporter-app] to map your workout and nutrition activity to how you feel.
 
-<img src="https://dl.dropboxusercontent.com/u/366007/fit%20report/screenshot.png" alt="fit-report" width="873">
+<img src="https://dl.dropboxusercontent.com/u/366007/fit%20report/screenshot.png" alt="fit-report" width="872">
 
 `worked out`, `ate well` and `mood` are qualitative metrics which you should redefine as you improve. A 5k run might be the workout of a lifetime for one person and a warm up for someone more experienced. Over time, as you get fitter you'll naturally intensify your workouts and improve your nutritional standards.
 
