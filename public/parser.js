@@ -2,7 +2,10 @@ console.log('( ﾟ▽ﾟ)/');
 
 moment.lang('en');
 
-$.getJSON('fit-report.json', function(json) {
+var input = 'https://dl.dropboxusercontent.com/u/366007/fit-report.json'
+// var input = 'fit-report.json'
+
+$.getJSON(input, function(json) {
 	var responses,
 		workoutStreak = 0,
 		ateWellStreak = 0,

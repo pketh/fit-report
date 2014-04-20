@@ -9,6 +9,9 @@ REPORTER_FOLDER=~/Dropbox/Apps/Reporter-App/
 # Location of project repo
 PROJECT=~/Dropbox/projects/fit-report/
 
+# Location of output file on public Dropbox folder
+OUTPUT=~/Dropbox/public/fit-report.json
+
 # File with FTP info
 CREDENTIALS_FILE="credentials.sh"
 source $PROJECT$CREDENTIALS_FILE
@@ -19,11 +22,15 @@ source $PROJECT$CREDENTIALS_FILE
 
 cd $REPORTER_FOLDER
 rm fit-report.json
+rm -- -report.json
+rm Icon^M
 
 # get number of json files in folder, excluding 'fit-report.json'
 number_reports=$(ls -l | wc -l)
 echo "number of reports: $number_reports"
-
+LS=$(ls)
+echo $LS
+echo
 oldest_report=$(ls -t | grep -v 'fit-report.json' | tail -n1)
 echo "oldest report is: $oldest_report"
 
@@ -53,15 +60,17 @@ do
 		# don't append a ',' to the oldest snapshot in the last file.
 		if [ $current_file == $oldest_report ] && [ $ii == $((current_file_snapshots - 1 )) ]
 			then
+				echo
+				echo "---------------------"
 				echo "✿ this is the last snapshot"
 				cat $current_file | jq ".snapshots[$ii] | {date, responses}" >> fit-report.json
 			else
 				cat $current_file | jq ".snapshots[$ii] | {date, responses}" >> fit-report.json
 				echo ',' >> fit-report.json
 		fi
-		echo "----"
 	done
 
+echo "----"
 done
 
 # end the json array
@@ -69,7 +78,10 @@ echo ']' >> fit-report.json
 
 
 # upload fit-report.json to server ↴
-curl -T fit-report.json ftp://$FTP_USER:$FTP_PASS@$FTP_ADDRESS{}
+# curl -T fit-report.json ftp://$FTP_USER:$FTP_PASS@$FTP_ADDRESS{}
+
+# copy fit-report.json to dropbox public folder ↴
+cp fit-report.json $OUTPUT
 
 # echo on complete
 echo '♥︎︎ fit-report updated'
