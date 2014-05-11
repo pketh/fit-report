@@ -46,6 +46,10 @@ body {
 * ---------------------------------------------------
 */
 
+.about {
+	margin-right: 10px;
+}
+
 .col1, .col2, .col3 {
 	display: inline-block;
 }
