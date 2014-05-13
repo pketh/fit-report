@@ -27,7 +27,7 @@ On my mac, I have `report.sh` set to run as a [launch daemon][apple-launchd] eve
 
 > `report.sh` requires [jq][jq]. Run `$ brew install jq`
 
-When run, `report.sh` combines the reporter JSON files into a single file and uploads it to an ftp server (configured in `credentials.sh`).
+When run, `report.sh` combines the reporter JSON files into a single file and moves the upload to the `/public` dropbox folder where it can be retrieved remoted.
 
 On the remote static server, `parser.js` then parses the processed Reporter JSON and uses Mustache js to render the fitness visualization.
 
