@@ -15,8 +15,8 @@ body {
 	font-family: 'proxima-nova', 'Lucida Grande', Helvetica, sans-serif;
 	font-weight: 300;
 	max-width: 700px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
@@ -59,7 +59,7 @@ body {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	width: 65%;
+	width: 55%;
 	min-width: 104px;
 }
 
